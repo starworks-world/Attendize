@@ -47,3 +47,15 @@ $factory->state(PaymentGateway::class, 'Stripe SCA', [
     'admin_blade_template' => 'ManageAccount.Partials.StripeSCA',
     'checkout_blade_template' => 'Public.ViewEvent.Partials.PaymentStripeSCA'
 ]);
+
+// Cashfree PG
+$factory->state(PaymentGateway::class, 'Cashfree', [
+    'provider_name' => 'Cashfree',
+    'provider_url' => 'https://www.cashfree.com',
+    'is_on_site' => 1,
+    'can_refund' => 1,
+    'name' => 'Cashfree',
+    'default' => 0,
+    'admin_blade_template' => 'ManageAccount.Partials.CashFree',
+    'checkout_blade_template' => 'Public.ViewEvent.Partials.PaymentCashFree'
+]);
