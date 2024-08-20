@@ -128,9 +128,11 @@ class ManageAccountController extends MyBaseController
             case StripeSCA::GATEWAY_NAME :
                 $config = $request->get('stripe_sca');
                 break;
+            case Cashfree::GATEWAY_NAME :
+                $config = $request->get('cashfree');
+                break;
             case Dummy::GATEWAY_NAME :
                 break;
-
         }
 
         PaymentGateway::query()->update(['default' => 0]);
