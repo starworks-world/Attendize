@@ -1,3 +1,8 @@
+This repo is forked for Nextwave Goa 2024 Ticket sales.
+
+Modifications: Add cashfree-omnipay plugin.
+
+
 *Attendize* is an open-source ticketing and event management application built using the Laravel PHP framework. Attendize allows event organisers to sell tickets to their events and manage attendees without paying service fees to third party ticketing companies.
 
 <p align="center">
