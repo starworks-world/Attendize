@@ -19,6 +19,7 @@ return [
     'business_name'                     => 'Business Name',
     'business_tax_number'               => 'Business Tax Number',
     'card_number'                       => 'Card number',
+    'cashfree_credit_or_debit_card'       => 'Credit or debit card',
     'checkout_order'                    => 'Continue to Payment',
     'checkout_submit'                   => 'Checkout',
     'confirmation_email'                => 'and a confirmation email have been sent to you.',

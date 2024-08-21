@@ -20,7 +20,7 @@ return [
             'options' => [],
         ],
         'cashfree' => [
-            'driver'  => 'CashFree',
+            'driver'  => 'Cashfree',
             'options' => [],
         ],
     ],
