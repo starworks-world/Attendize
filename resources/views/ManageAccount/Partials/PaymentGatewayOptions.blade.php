@@ -31,7 +31,6 @@
 @foreach ($payment_gateways as $id => $payment_gateway)
 
 @if(View::exists($payment_gateway['admin_blade_template']))
-$payment_gateway['admin_blade_template']
     @include($payment_gateway['admin_blade_template'])
 @endif
 
