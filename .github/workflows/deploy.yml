@@ -1,0 +1,17 @@
+name: Push to plesk server on commit
+
+on:
+  push:
+    branches:
+      - master  # Change this to your target branch if needed
+
+jobs:
+  trigger-webhook:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send webhook
+      env:
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      run: |
+        curl -X POST $WEBHOOK_URL
