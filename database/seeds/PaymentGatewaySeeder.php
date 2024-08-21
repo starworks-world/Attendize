@@ -62,5 +62,21 @@ class PaymentGatewaySeeder extends Seeder
             );
         }
 
+        $cashfree = DB::table('payment_gateways')->where('name', '=', 'Cashfree')->first(); 
+        if ($cashfree === null) {
+            DB::table('payment_gateways')->insert(
+                [
+                    'provider_name' => 'Cashfree',
+                    'provider_url' => 'https://www.cashfree.com',
+                    'is_on_site' => 1,
+                    'can_refund' => 1,
+                    'name' => 'Cashfree',
+                    'default' => 0,
+                    'admin_blade_template' => 'ManageAccount.Partials.CashFree',
+                    'checkout_blade_template' => 'Public.ViewEvent.Partials.PaymentCashFree'
+                ]
+            );
+        }
+
     }
 }
