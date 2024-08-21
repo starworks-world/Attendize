@@ -56,6 +56,6 @@ $factory->state(PaymentGateway::class, 'Cashfree', [
     'can_refund' => 1,
     'name' => 'Cashfree',
     'default' => 0,
-    'admin_blade_template' => 'ManageAccount.Partials.CashFree',
-    'checkout_blade_template' => 'Public.ViewEvent.Partials.PaymentCashFree'
+    'admin_blade_template' => 'ManageAccount.Partials.Cashfree',
+    'checkout_blade_template' => 'Public.ViewEvent.Partials.PaymentCashfree'
 ]);
